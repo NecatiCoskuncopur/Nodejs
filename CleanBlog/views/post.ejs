@@ -1,0 +1,50 @@
+<%- include('partials/_header') -%>
+<body>
+    <%- include('partials/_navigation') -%>
+    <div class="container-fluid">
+        <main class="tm-main">
+                   
+            <div class="row tm-row">
+                <div class="col-12">
+                    <img src="/img/img-01.jpg"  alt="Image" class="img-fluid tm-catalog-item-img">
+                </div>
+            </div>
+            <div class="row tm-row">
+                <div class="col-lg-8 tm-post-col">
+                    <div class="tm-post-full">                    
+                        <div class="mb-4">
+                            <h2 class="pt-2 tm-color-primary tm-post-title"><%= post.title %></h2>
+                          
+                   
+                            <p>
+                                <%= post.description %>
+                            </p>
+                         
+                        </div>
+                        
+                        <div class="tm-bg-gray tm-share-box">
+                            <div class="text-center">
+                                <a href="/posts/edit/<%= post._id %>" class="btn btn-primary p-0 mb-4 tm-btn-animate tm-btn-download tm-icon-download"><span>Update Details</span></a>	
+                            </div>	
+                            <div class="text-center">
+                                <a href="/posts/<%= post._id %>?_method=DELETE" class="btn btn-danger p-0 tm-btn-animate tm-btn-download tm-icon-download" onclick="return confirm('Are u sure?')"><span>Delete Photo</span></a>	
+                            </div>								
+                        </div>
+                    </div>
+                </div>
+      
+            </div>
+            <footer class="row tm-row">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                </div>
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2020 Xtra Blog Company Co. Ltd.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/templatemo-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "Clean Blog",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": "https://github.com/NecatiCoskuncopur/CleanBlog.git",
+  "author": "Necati Coşkunçopur <necaticoskuncopur@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mongoose": "^6.9.0",
+    "vercel": "^28.15.0"
+  }
+}
